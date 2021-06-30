@@ -4,21 +4,31 @@ TABLE OF CONTENTS
 
 0. SYSTEM REQUIREMENTS
 
-This program was written to be run with Intellij.
+This program was written to be run with Intellij or Eclipse IDE.
 
 Download the Following Application to View the Database Information depending on your PC type:
          - https://github.com/pawelsalawa/sqlitestudio/releases/download/3.2.1/InstallSQLiteStudio-3.2.1.exe  (Use This If you are using Windows)
          - https://github.com/pawelsalawa/sqlitestudio/releases/download/3.2.1/InstallSQLiteStudio-3.2.1.dmg  (Use This If you are using Mac)
 
-Download The SQLite Library From the Following Link:
-	 - https://drive.google.com/file/d/1sOZ4eN1kzQ328IJkRR5TgfnhuiCNe15x/view?usp=sharing
+
+It also requires a SQLite library to be configured within the module. 
+
+If you are using Intellij: 
+1- Open project folder 
+2- Navigate to File > Project Structure > Libraries
+3- Click the '+' symbol on the top left to open file navigation and add the sqlite-jdbc-3.30.1 file.
+4- Click "Apply and close" or click on "Apply" then close the shown window
+5- Restart Intellij to establish these changes. Navigate to MainPage and run it to start the program.
 
 
-It also requires a SQLite library to be installed. Download the file from the links above. In Intellij, open project
-folder and navigate to File > Project Structure > Libraries. Click the '+' symbol on the top left to open file
-navigation and add the SQLite file.
-
-Restart Intellij to establish these changes. Navigate to MainPage and run it to start the program.
+If you are using Eclipse:
+1- Open project folder 
+2- Right click on the project name which is Item Trader
+3- Navigate to Build Path > Configure Build Path
+4- In the newly opened window, click on the "Libraries" button which should be in the middle
+5- Left click on "Classpath" and then click on "Add External JARs" and add the sqlite-jdbc-3.30.1 file 
+6- Click on "Apply and close" or click on "Apply" then close the shown window
+7- Navigate to MainPage and run it to start the program
 
 NOTE: To run the program from scratch and start off with a completley new set of data, delete the database.db and database_demo.db files
       from the Phase2 Directory
